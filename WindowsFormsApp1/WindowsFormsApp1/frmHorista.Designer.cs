@@ -51,6 +51,7 @@
             this.btnInstanciarHorista.TabIndex = 19;
             this.btnInstanciarHorista.Text = "Instanciar Horista";
             this.btnInstanciarHorista.UseVisualStyleBackColor = true;
+            this.btnInstanciarHorista.Click += new System.EventHandler(this.btnInstanciarHorista_Click);
             // 
             // lbDataEntradaEmpresa
             // 

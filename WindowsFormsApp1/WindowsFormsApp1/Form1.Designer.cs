@@ -50,6 +50,7 @@
             this.btnHorista.TabIndex = 2;
             this.btnHorista.Text = "Horista";
             this.btnHorista.UseVisualStyleBackColor = true;
+            this.btnHorista.Click += new System.EventHandler(this.btnHorista_Click);
             // 
             // Form1
             // 

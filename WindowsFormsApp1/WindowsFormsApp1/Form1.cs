@@ -23,5 +23,12 @@ namespace WindowsFormsApp1
 
             frm.Show();
         }
+
+        private void btnHorista_Click(object sender, EventArgs e)
+        {
+            frmHorista frm = new frmHorista();
+
+            frm.Show();
+        }
     }
 }
