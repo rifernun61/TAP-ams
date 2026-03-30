@@ -4,19 +4,25 @@ public class Music {
     private Long id;
     private String title;
     private String artist;
+    private String album;
+    private Integer releaseYear;
 
     public Music() {
     }
 
-    public Music(String title, String artist) {
+    public Music(String title, String artist, String album, Integer releaseYear) {
         this.title = title;
         this.artist = artist;
+        this.album = album;
+        this.releaseYear = releaseYear;
     }
 
-    public Music(Long id, String title, String artist) {
+    public Music(Long id, String title, String artist, String album, Integer releaseYear) {
         this.id = id;
         this.title = title;
         this.artist = artist;
+        this.album = album;
+        this.releaseYear = releaseYear;
     }
 
     public Long getId() {
@@ -43,4 +49,19 @@ public class Music {
         this.artist = artist;
     }
 
+    public String getAlbum() {
+        return album;
+    }
+
+    public void setAlbum(String album) {
+        this.album = album;
+    }
+
+    public Integer getReleaseYear() {
+        return releaseYear;
+    }
+
+    public void setReleaseYear(Integer releaseYear) {
+        this.releaseYear = releaseYear;
+    }
 }
