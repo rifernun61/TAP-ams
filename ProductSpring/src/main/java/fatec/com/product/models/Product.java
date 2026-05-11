@@ -6,6 +6,7 @@ public class Product {
     private String name;
     private Double price;
     private String description;
+    private Category category;
 
     public Product() {
     }

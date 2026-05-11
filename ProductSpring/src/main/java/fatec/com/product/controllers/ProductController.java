@@ -1,6 +1,7 @@
 package fatec.com.product.controllers;
 
 import java.util.ArrayList;
+import java.util.Locale.Category;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -25,12 +26,13 @@ public class ProductController {
     static final ArrayList<SpecialProduct> specialProducts = new ArrayList<>();
 
     static {
-        products.add(new Product(1L, "Notebook",    3500.00, "Notebook i7 512 16gb"));
-        products.add(new Product(2L, "Smartphone",  2000.00, "Smartphone android 128gb"));
-        products.add(new Product(3L, "Tablet",      1500.00, "Tablet android 64gb"));
-
-        specialProducts.add(new SpecialProduct(4L, "Notebook Pro", 5000.00,
-                "Notebook gamer high-end", "XG17", "ASUS"));
+        Product p1 = new Product(1L, "Notebook",    3500.00, "Notebook i7 512 16gb");
+        Product p2 = new Product(2L, "Smartphone",  2000.00, "Smartphone android 128gb");
+        Product p3 = new Product(3L, "Tablet",      1500.00, "Tablet android 64gb");
+        
+        products.add(p1);
+        products.add(p2);
+        products.add(p3);
     }
 
     // ─── Product CRUD ────────────────────────────────────────────────────────
